@@ -1,0 +1,235 @@
+{
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "project": "./tsconfig.json"
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true,
+      "jasmine": true,
+      "jest": true
+    },
+    "globals": {
+      "$appState": true,
+      "jest": true,
+      "$zopim": true               //TODO - to remove
+    },
+    "parser": "@typescript-eslint/parser",
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      },
+      "import/extensions": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx"
+      ],
+      "import/parsers": {
+        "@typescript-eslint/parser": [
+          ".ts",
+          ".tsx"
+        ]
+      },
+      "import/resolver": {
+        "node": {
+          "paths": [
+            "src"
+          ],
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ]
+        }
+      },
+      "import/ignore": [
+        "node_modules"
+      ]
+    },
+    "rules": {
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "semi": "error",
+      "react/no-find-dom-node": "warn",                               //to error
+      "react/display-name": "off",                                    //to consider ?
+      "react/jsx-no-bind": ["error"],
+      "react/jsx-key": "error",
+      "react/no-string-refs": "warn",                                 //to error
+      "react/no-unescaped-entities": "warn",
+      "react/jsx-no-duplicate-props": "error",
+      "react/jsx-no-target-blank": "warn",
+      "react/jsx-props-no-spreading": "warn",                         //to error
+      "react/no-deprecated":  "error",
+      "react/jsx-curly-spacing": ["error", {"when": "never", "allowMultiline": false}],
+      "react/jsx-equals-spacing": ["error", "never"],
+      "react/jsx-no-useless-fragment": "error",
+      "react/jsx-curly-brace-presence": [
+        "error",
+        {
+          "props": "never",
+          "children": "ignore"
+        }
+      ],
+      "keyword-spacing": "error",
+      "no-tabs": "error",
+      "no-useless-escape": "warn",
+      "no-duplicate-case": "warn",
+      "no-undef": "error",
+      "no-console": "off",
+      "no-empty": "warn",
+      "no-constant-condition": "warn",
+      "no-prototype-builtins": "warn",
+      "no-unused-expressions": "error",
+      "no-return-await": "off",
+      "no-case-declarations": "warn",                                 //to error
+      "prefer-const": "error",
+      "no-implicit-coercion": "error",
+      "eqeqeq": "warn",
+      "prefer-promise-reject-errors": "warn",
+      "getter-return": "off",
+      "no-extra-boolean-cast": "warn",
+      "eol-last": "error",
+      "object-curly-spacing": ["error", "always"],
+      "quotes": ["error", "single"],
+      "jsx-quotes": ["error", "prefer-single"],
+      "@typescript-eslint/explicit-member-accessibility": "error",
+      "@typescript-eslint/explicit-function-return-type": "error",
+      "@typescript-eslint/explicit-module-boundary-types": "off",     //to error ?
+      "@typescript-eslint/promise-function-async": "off",
+      "@typescript-eslint/no-type-alias": "off",
+      "@typescript-eslint/strict-boolean-expressions": "error",
+      "@typescript-eslint/no-magic-numbers": "off",
+      "@typescript-eslint/no-explicit-any": "error",
+      "@typescript-eslint/no-empty-function": "off",                  //to consider ?
+      "@typescript-eslint/prefer-ts-expect-error": "error",
+      "@typescript-eslint/prefer-regexp-exec": "warn",
+      "@typescript-eslint/member-ordering": "off",
+      "@typescript-eslint/no-unused-vars": "off",                     //This is already checked by TS
+      "@typescript-eslint/restrict-plus-operands": "warn",
+      "@typescript-eslint/unbound-method": "off",                     //to consider ?
+      "@typescript-eslint/no-misused-promises": ["warn", { "checksVoidReturn": false }],
+      "@typescript-eslint/camelcase": "off",                          //to consider ?
+      "@typescript-eslint/no-floating-promises": "warn",
+      "@typescript-eslint/require-await": "off",
+      "@typescript-eslint/no-empty-interface": "warn",
+      "@typescript-eslint/no-use-before-define": "warn",
+      "@typescript-eslint/no-this-alias": "warn",
+      "@typescript-eslint/no-useless-constructor": "warn",
+      "@typescript-eslint/generic-type-naming": "off",
+      "@typescript-eslint/unified-signatures": "warn",
+      "@typescript-eslint/no-require-imports": "warn",
+      "@typescript-eslint/no-var-requires": "warn",
+      "@typescript-eslint/await-thenable": "error",
+      "@typescript-eslint/require-array-sort-compare": "off",
+      "@typescript-eslint/no-extraneous-class": "warn",
+      "@typescript-eslint/no-parameter-properties": "off",
+      "@typescript-eslint/array-type": "off",
+      "@typescript-eslint/no-inferrable-types": "off",
+      "@typescript-eslint/consistent-type-assertions": ["error", { "assertionStyle": "never" }],
+      "@typescript-eslint/prefer-includes": "error",
+      "@typescript-eslint/ban-ts-comment": "off",                 //to error ?
+      "@typescript-eslint/no-unnecessary-boolean-literal-compare": "off",
+      "@typescript-eslint/ban-types" : "off",
+      "@typescript-eslint/restrict-template-expressions": "error",
+
+      "jsx-a11y/mouse-events-have-key-events": "warn",
+      "jsx-a11y/click-events-have-key-events": "off",               //to consider ?
+      "jsx-a11y/no-static-element-interactions": "off",             //to consider ?
+      "jsx-a11y/no-noninteractive-element-interactions": "warn",
+      "jsx-a11y/iframe-has-title": "warn",
+      "jsx-a11y/no-onchange": "warn",
+      "jsx-a11y/alt-text": "warn",
+      "jsx-a11y/anchor-is-valid": "warn",
+      "jsx-a11y/label-has-associated-control": "off",
+
+      "import/namespace": "warn",
+      "import/default": "warn",
+      "import/named": "warn",
+      "import/no-relative-parent-imports": "error",
+      "import/no-duplicates": "warn",
+      "import/no-unresolved": "off",                                  //to consider ?
+      "arrow-body-style": [                                           //to consider ?
+        "off",
+        "as-needed"
+      ],
+      "prefer-template": "error",
+      "react/prop-types": "off",
+      "prettier/prettier": ["off", {
+        "useTabs": false,
+        "printWidth": 120,
+        "tabWidth": 4,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "jsxBracketSameLine": false,
+        "parser": "typescript",
+        "noSemi": true
+      }],
+      "padding-line-between-statements": [                            //to consider ?
+        "off",
+        {
+          "blankLine": "always",
+          "prev": [
+            "const",
+            "let",
+            "var"
+          ],
+          "next": "*"
+        },
+        {
+          "blankLine": "any",
+          "prev": [
+            "const",
+            "let",
+            "var"
+          ],
+          "next": [
+            "const",
+            "let",
+            "var"
+          ]
+        }
+      ],
+      "deprecate/function": [
+        "warn",
+        {
+          "name": "getEnvUniverse",
+          "use": "please use universe variable from AppState"
+        }
+      ],
+
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      // Indent with 4 spaces
+      "indent": ["warn", 4],
+      // Indent JSX with 4 spaces
+      "react/jsx-indent": ["warn", 4],
+      // Indent props with 4 spaces
+      "react/jsx-indent-props": ["warn", 4]
+    },
+    "extends": [
+      "plugin:import/errors",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier/@typescript-eslint",
+      "plugin:prettier/recommended",
+      "plugin:jsx-a11y/recommended"
+    ],
+    "plugins": [
+      "react",
+      "@typescript-eslint",
+      "import",
+      "prettier",
+      "deprecate",
+      "jsx-a11y",
+      "react-hooks"
+    ]
+  }
