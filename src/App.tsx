@@ -1,11 +1,16 @@
 import React from 'react';
+import { AppState, Provider } from './appState/appState';
 import { CalenderWrapper } from './ui/calendarWrapper/CalendarWrapper';
 
-function App(): JSX.Element {
+interface PropsTypes {
+    appState: AppState,
+}
+
+function App(props: PropsTypes): JSX.Element {
     return (
-        <div className='App'>
+        <Provider value={props.appState}>
             <CalenderWrapper />
-        </div>
+        </Provider>
     );
 }
 

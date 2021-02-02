@@ -79,7 +79,7 @@
         }
       ],
       "keyword-spacing": "error",
-      "no-tabs": "error",
+      "no-tabs": "off",
       "no-useless-escape": "warn",
       "no-duplicate-case": "warn",
       "no-undef": "error",
