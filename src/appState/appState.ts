@@ -6,7 +6,7 @@ export class AppState {
     public readonly reservationCalendarState: ReservationCalendarState;
 
     public constructor(){
-        makeObservable(this);
+        //makeObservable(this);
 
         this.reservationCalendarState = new ReservationCalendarState();
     };

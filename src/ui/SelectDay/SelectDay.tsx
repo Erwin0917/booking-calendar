@@ -1,15 +1,25 @@
+import { observer } from 'mobx-react-lite';
+import { useAppStateContext } from 'src/appState/appState';
 
-export const SelectDay = (): JSX.Element => {
+export const SelectDay = observer((): JSX.Element => {
+    const { reservationCalendarState } = useAppStateContext();
+
+    const renderDays = ():React.ReactNodeArray => {
+        const { days } = reservationCalendarState.getWeekDaysFromSelectedDay;
+
+        return days.map( day => {
+
+            return (
+                <li key={day.toString()}>{day.format('dddd DD')}</li>
+            );
+        });
+    };
 
     return (
         <div>
-            <div>pn 02</div>
-            <div>wt 01</div>
-            <div>sr 03</div>
-            <div>cz 04</div>
-            <div>pt 05</div>
-            <div>so 06</div>
-            <div>nd 07</div>
+            <ul>
+                {renderDays()}
+            </ul>
         </div>
     );
-};
+});
