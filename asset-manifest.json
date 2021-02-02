@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/booking-calendar/static/css/main.5634ad83.chunk.css",
+    "main.js": "/booking-calendar/static/js/main.84d6e859.chunk.js",
+    "main.js.map": "/booking-calendar/static/js/main.84d6e859.chunk.js.map",
+    "runtime-main.js": "/booking-calendar/static/js/runtime-main.434a24f6.js",
+    "runtime-main.js.map": "/booking-calendar/static/js/runtime-main.434a24f6.js.map",
+    "static/css/2.9c6b934b.chunk.css": "/booking-calendar/static/css/2.9c6b934b.chunk.css",
+    "static/js/2.9626dcb2.chunk.js": "/booking-calendar/static/js/2.9626dcb2.chunk.js",
+    "static/js/2.9626dcb2.chunk.js.map": "/booking-calendar/static/js/2.9626dcb2.chunk.js.map",
+    "static/js/3.9c19c399.chunk.js": "/booking-calendar/static/js/3.9c19c399.chunk.js",
+    "static/js/3.9c19c399.chunk.js.map": "/booking-calendar/static/js/3.9c19c399.chunk.js.map",
+    "index.html": "/booking-calendar/index.html",
+    "static/css/2.9c6b934b.chunk.css.map": "/booking-calendar/static/css/2.9c6b934b.chunk.css.map",
+    "static/css/main.5634ad83.chunk.css.map": "/booking-calendar/static/css/main.5634ad83.chunk.css.map",
+    "static/js/2.9626dcb2.chunk.js.LICENSE.txt": "/booking-calendar/static/js/2.9626dcb2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.434a24f6.js",
+    "static/css/2.9c6b934b.chunk.css",
+    "static/js/2.9626dcb2.chunk.js",
+    "static/css/main.5634ad83.chunk.css",
+    "static/js/main.84d6e859.chunk.js"
+  ]
+}
