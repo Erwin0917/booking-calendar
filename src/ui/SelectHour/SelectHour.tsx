@@ -1,20 +1,21 @@
+import React from 'react';
+import { HourItem, HourList } from './SelectHour.style';
+
 export const SelectHour = (): JSX.Element => {
 
     return (
         <div>
-            <ul>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-                <li><button>8:00-9:00</button></li>
-            </ul>
+            <HourList>
+                <li><HourItem>8:00 - 9:00</HourItem></li>
+                <li><HourItem>8:00 - 9:00</HourItem></li>
+                <li><HourItem>8:00 - 9:00</HourItem></li>
+                <li><HourItem>8:00 - 9:00</HourItem></li>
+                <li><HourItem>8:00 - 9:00</HourItem></li>
+                <li><HourItem>8:00 - 9:00</HourItem></li>
+                <li><HourItem>8:00 - 9:00</HourItem></li>
+                <li><HourItem>8:00 - 9:00</HourItem></li>
+                <li><HourItem>8:00 - 9:00</HourItem></li>
+            </HourList>
         </div>
     );
 };

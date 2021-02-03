@@ -1,12 +1,12 @@
 import { action, computed, makeObservable, observable } from 'mobx';
 import moment from 'moment';
-
+import 'moment/locale/pl';
 export interface ListOfDayType {
     days: Array<moment.Moment>;
 }
 
 export class ReservationCalendarState {
-    @observable public currentDate: moment.Moment = moment(new Date());
+    @observable public currentDate: moment.Moment = moment(new Date()).locale('pl');
 
     public constructor() {
         makeObservable(this);
