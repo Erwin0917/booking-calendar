@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/booking-calendar/static/css/main.e6a257ba.chunk.css",
-    "main.js": "/booking-calendar/static/js/main.3944021b.chunk.js",
-    "main.js.map": "/booking-calendar/static/js/main.3944021b.chunk.js.map",
-    "runtime-main.js": "/booking-calendar/static/js/runtime-main.9edbd6ea.js",
-    "runtime-main.js.map": "/booking-calendar/static/js/runtime-main.9edbd6ea.js.map",
+    "main.js": "/booking-calendar/static/js/main.691af2b1.chunk.js",
+    "main.js.map": "/booking-calendar/static/js/main.691af2b1.chunk.js.map",
+    "runtime-main.js": "/booking-calendar/static/js/runtime-main.b82b4189.js",
+    "runtime-main.js.map": "/booking-calendar/static/js/runtime-main.b82b4189.js.map",
     "static/css/2.9c6b934b.chunk.css": "/booking-calendar/static/css/2.9c6b934b.chunk.css",
-    "static/js/2.e8313645.chunk.js": "/booking-calendar/static/js/2.e8313645.chunk.js",
-    "static/js/2.e8313645.chunk.js.map": "/booking-calendar/static/js/2.e8313645.chunk.js.map",
-    "static/js/3.f713f715.chunk.js": "/booking-calendar/static/js/3.f713f715.chunk.js",
-    "static/js/3.f713f715.chunk.js.map": "/booking-calendar/static/js/3.f713f715.chunk.js.map",
+    "static/js/2.526793ae.chunk.js": "/booking-calendar/static/js/2.526793ae.chunk.js",
+    "static/js/2.526793ae.chunk.js.map": "/booking-calendar/static/js/2.526793ae.chunk.js.map",
+    "static/js/3.d951a369.chunk.js": "/booking-calendar/static/js/3.d951a369.chunk.js",
+    "static/js/3.d951a369.chunk.js.map": "/booking-calendar/static/js/3.d951a369.chunk.js.map",
     "index.html": "/booking-calendar/index.html",
     "static/css/2.9c6b934b.chunk.css.map": "/booking-calendar/static/css/2.9c6b934b.chunk.css.map",
     "static/css/main.e6a257ba.chunk.css.map": "/booking-calendar/static/css/main.e6a257ba.chunk.css.map",
-    "static/js/2.e8313645.chunk.js.LICENSE.txt": "/booking-calendar/static/js/2.e8313645.chunk.js.LICENSE.txt"
+    "static/js/2.526793ae.chunk.js.LICENSE.txt": "/booking-calendar/static/js/2.526793ae.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9edbd6ea.js",
+    "static/js/runtime-main.b82b4189.js",
     "static/css/2.9c6b934b.chunk.css",
-    "static/js/2.e8313645.chunk.js",
+    "static/js/2.526793ae.chunk.js",
     "static/css/main.e6a257ba.chunk.css",
-    "static/js/main.3944021b.chunk.js"
+    "static/js/main.691af2b1.chunk.js"
   ]
 }
