@@ -1,10 +1,6 @@
 import { action, computed, makeObservable, observable } from 'mobx';
 import moment from 'moment';
 import 'moment/locale/pl';
-export interface ListOfDayType {
-    days: Array<moment.Moment>;
-}
-
 export class ReservationCalendarState {
     @observable public currentDate: moment.Moment = moment(new Date()).locale('pl');
 
@@ -34,7 +30,7 @@ export class ReservationCalendarState {
     }
 
     @computed public get getWeekFromDay(): {start: moment.Moment, end: moment.Moment} {
-        const { days } = this.getWeekDaysFromSelectedDay;
+        const days = this.getWeekDaysFromSelectedDay;
 
         const startDay = days[0];
         const lastDay = days[days.length - 1];
@@ -45,14 +41,14 @@ export class ReservationCalendarState {
         };
     }
 
-    @computed public get getWeekDaysFromSelectedDay(): ListOfDayType {
-        const weekStartDay = this.currentDate.startOf('isoWeek');
-
+    @computed public get getWeekDaysFromSelectedDay():  Array<moment.Moment> {
+        const currentDay = this.currentDate.clone();
+        const weekStartDay = currentDay.startOf('isoWeek');
         const days = [];
+
         for (let i = 0; i <= 6; i++) {
             days.push(moment(weekStartDay).add(i, 'days'));
         }
-
-        return { days };
+        return days;
     };
 }
